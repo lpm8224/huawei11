@@ -1,0 +1,24 @@
+# 配置用户名（替换成你的GitHub用户名，比如 mine5678）
+git config --global user.name "lpm8224"
+# 配置邮箱（替换成你的GitHub注册邮箱，比如 xxx@163.com）
+git config --global user.email "150000723@qq.com"
+
+git config --global --list
+
+# 替换成你的GitHub注册邮箱，执行后按3次回车（默认保存路径，不设置密码）
+ssh-keygen -t ed25519 -C "150000723@@qq.com"
+
+C:\Users\ZhangSan\.ssh\id_ed25519.pub
+
+ssh -T git@github.com
+
+cd
+git init
+git remote remove origin
+
+git clone git@github.com:lpm8224/huawei11.git
+
+git add .
+git commit -m "初始化项目：添加核心代码文件"
+git remote add origin git@github.com:lpm8224/huawei11.git
+git push -u origin main
